@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <!-- Add any additional head content or links to CSS files here -->
+</head>
+<body>
+    <div class="container">
+        <h1>Register</h1>
+        <form method="post">
+            {% csrf_token %}
+            <!-- Render the form fields here -->
+            {{ form.as_p }}
+            <button type="submit">Register</button>
+        </form>
+        <p>Already have an account? <a href="{% url 'login' %}">Login here</a>.</p>
+    </div>
+</body>
+</html>
