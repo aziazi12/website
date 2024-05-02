@@ -88,9 +88,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'users', 
         'USER': 'doadmin',
-        'PASSWORD': 'AVNS_RGZXpBgoWf44QWgUZh0',
-        'HOST': 'dbaas-db-6459885-do-user-16522106-0.c.db.ondigitalocean.com', 
-        'PORT': '25060',
+        'PASSWORD': '',
+        'HOST': '', 
+        'PORT': '',
     }
 }
 
