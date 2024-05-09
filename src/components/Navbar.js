@@ -44,20 +44,29 @@ function Navbar() {
               </Link>
             </li>
             <li className='nav-item'>
-                <Link to='/net-load-calc' className='nav-links' onClick={closeMobileMenu}> 
-                    Net Load Calculator
+                <Link to='/design' className='nav-links' onClick={closeMobileMenu}> 
+                    Design
                 </Link>
             </li>
             <li className='nav-item'>
-                <Link to='/net-energy-calc' className='nav-links' onClick={closeMobileMenu}> 
-                    Net Energy Calculator
+                <Link to='/results' className='nav-links' onClick={closeMobileMenu}> 
+                    Results
                 </Link>
             </li>
+            
+            <li className='nav-item'>
+                <Link to='/profile' className='nav-links' onClick={closeMobileMenu}> 
+                    Profile
+                </Link>
+            </li>
+
             <li className='nav-item'>
                 <Link to='/log-in' className='nav-links-mobile' onClick={closeMobileMenu}> 
                     Log In
                 </Link>
             </li>
+
+
           </ul> 
           {button && <Button buttonStyle='btn--outline'>Log In</Button>}
         </div>

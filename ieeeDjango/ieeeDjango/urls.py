@@ -1,6 +1,7 @@
 from django.urls import path
 from startUp import views
 from django.contrib.auth import views as auth_views
+from django.contrib import admin
 
 
 app_name = "main"   
@@ -13,6 +14,8 @@ urlpatterns = [
     path('run-script/', views.run_script, name='run-script'),
 
     path('login/', views.login, name='login'),
+
+    path('admin/', admin.site.urls),
 
     # Test call path
     path('test-call/', views.test_call, name='test-call'),
